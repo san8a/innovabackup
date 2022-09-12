@@ -1,0 +1,2059 @@
+/*Fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap');
+
+@font-face {
+    font-family: Poppins;
+    src: url(../Fonts/Poppins/Poppins-Bold.ttf);
+    }
+@font-face {
+    font-family: Poppins-light;
+    src: url(../Fonts/Poppins/Poppins-Regular.ttf);
+    }
+/*Variables*/
+:root{
+    --color-main: #fff;
+    --details-color: #8b5beb;
+    --color-degradado: #8b5beb9a;
+    --colordegradado: #11998e8f;
+    --details-color-secondary: #11998e;
+    --font-color: black;
+    --color-secondary: #292929;
+    --secondary-black: #302f2f;
+    --footer-color: #f5f5f5c7;
+    --footer-secondary-color: #04d47e;
+    --gradient:linear-gradient(to right, #c742bc, #7673f3);
+    --font-color-menu: #333333;
+    --button-background: white;
+    --grey: #f0f0f0;
+    --black-grey: #292828;
+    --menu-profile-grey:rgb(104, 103, 103);
+    --menu: #000000;
+    --menu-font-color: white;
+    --sombra: rgba(0,0,0,0.20);
+   
+}
+/*Scroll bar configuration*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background: transparent;
+    border-radius: 20px;
+}
+::-webkit-scrollbar-thumb{
+background: var(--details-color);
+border-radius: 50px;
+}
+/*Configuraciones del body*/
+*{
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+body{
+    overflow-x: hidden;
+    background-color: var(--color-main);
+    scroll-behavior: smooth;
+    transition: ease .4s;
+}
+input:focus{
+    outline: none;
+}
+/*"Clases variables"*/
+.hidden{
+    display: none;
+}
+.effect-blur{
+    filter: blur(20px);
+    pointer-events: none;
+}
+.good{
+    border: 2px solid green;
+    border-radius: 4px;
+}
+.medium{
+    border: 2px solid yellow;
+    border-radius: 4px;
+}
+.bad{
+    border: 2px solid red;
+    border-radius: 4px;
+}
+/*Menu responsive*/
+
+.menu-responsive{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-main);
+    z-index: 100;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20%;
+    padding-top: 20%;
+    transition: .3s ease;
+}
+.menu-responsive nav{
+    list-style: none;
+    display: grid;
+}
+.menu-responsive li{
+    font-size: 50px;
+    color: var(--details-color);
+    margin: 20px 0;
+    font-family: Poppins;
+    transition: .3s ease;
+}
+.menu-responsive li:hover{
+    font-size: 70px;
+}
+/*Section 1*/
+.section1{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.wave-main{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    background-color: transparent;
+    width: 70%;
+    height: 50%;
+}
+
+/*Menu Principal*/
+
+.menu-box{
+    width: 100%;
+    height: 8%;
+    background-color: var(--color-main);
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    left: 0;
+}
+
+.home{
+    border: 0;
+    background: transparent;
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 550;
+    z-index: 10;
+    color: var(--font-color-menu);
+    
+}
+.home::after{
+    content:"   ";
+    position: absolute;
+    top: 95%;
+    left: 40%;
+    background-color: transparent;
+    width: 10px ;
+    height: 10px;
+    border-radius: 10000px;
+    z-index: 10;
+    transition: linear .1s all;
+}
+.home:hover::after{
+ background-color: var(--details-color);
+}
+
+.about-us{
+    border: 0;
+    background: transparent;
+    position: absolute;
+    top: 15%;
+    left: 36%;
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 550;
+    z-index: 10;
+    color: var(--font-color-menu);
+}
+.about-us::after{
+    content:"   ";
+    position: absolute;
+    top: 95%;
+    left: 40%;
+    background-color: transparent;
+    width: 10px ;
+    height: 10px;
+    border-radius: 10000px;
+    z-index: 10;
+    transition: linear .1s all;
+}
+.about-us:hover::after{
+ background-color: var(--details-color);
+}
+
+.contact{
+    border: 0;
+    background: transparent;
+    position: absolute;
+    top: 15%;
+    left: 49%;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 550;
+    z-index: 10;
+    color: var(--font-color-menu);
+}
+.contact::after{
+    content:"   ";
+    position: absolute;
+    top: 95%;
+    left: 45%;
+    background-color: transparent;
+    width: 10px ;
+    height: 10px;
+    border-radius: 10000px;
+    z-index: 10;
+    transition: linear .1s all;
+   
+}
+.contact:hover::after{
+ background-color: var(--details-color);
+}
+
+.opinions{
+    border: 0;
+    background: transparent;
+    position: absolute;
+    top: 15%;
+    left: 61%;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 550;
+    z-index: 10;
+    color: var(--font-color-menu);
+}
+.opinions::after{
+    content:"   ";
+    position: absolute;
+    top: 95%;
+    left: 45%;
+    background-color: transparent;
+    width: 10px ;
+    height: 10px;
+    border-radius: 10000px;
+    z-index: 10;
+    transition: linear .1s all;
+}
+.opinions:hover::after{
+ background-color: var(--details-color);
+}
+
+
+/*Theme mode button*/
+
+.button-theme-primary{
+    background-image: url(../images/moon.png);
+    background-color: var(--button-background);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+    border-radius: 100%;
+    height: 60px;
+    width: 60px;
+    position: fixed;
+    top: 88%;
+    left: 2%;
+    -webkit-box-shadow: 0px 0px 20px 6px var(--sombra); 
+    box-shadow: 0px 0px 20px 6px var(--sombra)  ;
+    transition: all linear .2s;
+    z-index: 80;
+}
+.button-theme-primary:hover{
+    background-color: var(--color-secondary);
+    background-image: url(../images/secondary-moon.png);
+}
+
+
+/*logo menu index*/
+
+.logo-main{
+    position: absolute;
+    top: -10%;
+    left: 2%;
+    width: 230px;
+    height: 120px;
+    background-image: url(../images/logo2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0%;
+    z-index: 30;
+    background-color: transparent;
+    
+
+}
+
+/*ilustration main*/
+
+.illustration-main{
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 20%;
+    left: 60%;
+    width: 27%;
+    height: 63%;
+    z-index: 2;
+    background-image: url(../images/Mesa\ de\ trabajo\ 1.png);
+}
+
+/*Titulo y descipcion inicial*/
+
+.titulo-main{
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    font-size: 60px;
+    font-family: 'Poppins';
+     background: var(--gradient); 
+    line-height: 70px;
+     background-clip: text;
+    -webkit-background-clip: text;
+    
+    -webkit-text-fill-color: transparent; 
+    
+
+}
+.texto-main{
+position: absolute;
+top: 55%;
+left: 5%;
+font-size: 30px;
+font-family: Poppins-light;
+
+}
+.description-main{
+    background-color: transparent;
+    font-size: 20px;
+    color: var(--font-color);
+    font-family: Poppins-light;
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    z-index: 10;
+
+}
+
+/*Button starts*/
+
+.start-button{
+    position: absolute;
+    top: 67.4%;
+    left: 9.3%;
+    width: 200px;
+    height: 20px;
+    padding: 16px;
+    font-size: 26px;
+    font-family: Poppins;
+    background: var(--gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    transition: linear .4s;
+    z-index: 10;
+}
+
+.arrow-button{
+    background-color: var(--details-color);
+    width: 36px;
+    height: 45px;
+    position: absolute;
+    top: 68%;
+    left: 7%;
+    border-radius: 20px;
+    font-size: 30px;
+    color: white;
+    padding-left: 20px;
+    padding-top: 13px;
+    transition: linear .3s all;
+}
+
+.arrow-button-hover{
+    background-color: var(--color-main);
+    width: 50%;
+    height: 45px;
+    position: absolute;
+    top: 70%;
+    left: 29%;
+    border-radius: 20px;
+    font-size: 30px;
+    color: white;
+    padding-left: 15px;
+    padding-top: 10px;
+} 
+
+/*Login Button*/
+.login-button{
+    background-color: var(--button-background);
+    position: fixed;
+    top: 2%;
+    left: 95%;
+    width: 43px;
+    height: 51px;
+
+    padding-left: 17px;
+    padding-top: 9px; 
+    font-size: 30px;
+    -webkit-box-shadow: 0px 0px 20px 6px var(--sombra); 
+    box-shadow: 0px 0px 20px 6px var(--sombra);
+    transition: all linear .2s;
+    border-radius: 100%;
+z-index: 30;
+}
+.login-button:hover{
+    background-color: var(--color-secondary);
+   color: white;
+}
+
+/*Login form*/
+
+.login-box{
+
+    position: fixed;
+    top: 5%;
+    left: 10%;
+    height: 90%;
+    width: 80%;
+    background-color: var(--color-main);
+    z-index: 31;
+    -webkit-box-shadow: 2px 0px 28px -2px rgba(0,0,0,0.59); 
+    box-shadow: 2px 0px 28px -2px rgba(0,0,0,0.59);
+    animation-name: entrada;
+    animation-duration: .5s;
+    
+    
+}
+@keyframes entrada {
+	from {
+		opacity: 1;
+		width: 0%;
+ 
+      
+	}
+
+	to {
+		width: 80%;
+		opacity: 1;
+       
+	}
+}
+/*Close button*/
+.x{
+    position: relative;
+    left: 97%;
+    top: .5%;
+    width: 50px;
+    height: 50px;
+    font-size: 50px;
+    z-index: 100;
+    color: var(--font-color);
+}
+/*Illustration login*/
+.login-illustration{
+    position: absolute;
+    top: 10%;
+    left: 0%;
+    width: 55%;
+    height: 75%;
+    background-image: url(../images/welcome.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all ease .4s;
+    z-index: 21;
+}
+/*Login title*/
+.login-title{
+    position: absolute;
+    top: 20%;
+    left: 60%;
+    font-size: 50px;
+    font-family: Poppins;
+    transition: all ease .4s;
+    color: var(--font-color);
+
+}
+/*first input user*/
+.input-user{
+    width: 20%;
+    background-color: transparent;
+    border: transparent;
+    font-size: 20px;
+    padding: 10px;
+    position: absolute;
+    top: 40%;
+    left: 62%;
+    transition: all ease .4s;
+    color: var(--font-color);
+}
+
+
+.input-user:focus{
+outline: none;
+border-bottom: 4px solid var(--details-color);
+}
+/*Icon first input*/
+.icon-user{
+    position: absolute;
+    top: 42%;
+    left: 60%;
+    transition: all ease .4s;
+    color: var(--font-color);
+}
+/*Second input password*/
+.input-password{
+    background-color: transparent;
+    border: transparent;
+    font-size: 20px;
+    padding: 10px;
+    position: absolute;
+    top: 52%;
+    left: 62%;
+    width: 20%;
+    transition: all ease .4s;
+    outline: none;
+    color: var(--font-color);
+}
+
+.input-password:focus{
+    border-bottom: 4px solid var(--details-color);
+    outline: none;
+}
+/*Icon second input*/
+.password-icon{
+position: absolute;
+top: 54%;
+left: 60%;
+transition: all ease .4s;
+color: var(--font-color);
+
+}
+/*Sign up paragraph*/
+.sign-up-p{
+    position: absolute;
+    top: 60%;
+    left: 60%;
+    font-family: Poppins-light;
+    font-size: 18px;
+    color: rgb(65, 64, 64);
+    transition: all ease .4s;
+}
+
+/*Login form button*/
+.login-form-button{
+    position: absolute;
+    top: 77%;
+    right: 19%;
+    color: white;
+    font-size: 40px;
+    padding-top: .5%;
+    width: 10%;
+    height: 6%;
+    padding-left: 8%;
+    border-radius: 30px;
+    background-color: var(--details-color);
+    transition: all ease .4s;
+}
+.login-form-button:hover{
+    color: var(--details-color);
+    background: transparent;
+    border: 4px solid var(--details-color);
+}
+
+.sub-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 55%;
+    background-color: var(--details-color);
+    z-index: 20;
+}
+
+.eye{
+    position: absolute;
+    top: 53.5%;
+    left: 80%;
+    font-size: 25px;
+    z-index: 40;
+    transition: .3s ease;
+    color: var(--font-color);
+}
+
+.positionv2{
+    position: absolute;
+    left: 10%;
+}
+
+
+/*Notification class*/
+
+.notification{
+    position: fixed;
+    top: 5%;
+    right: 5%;
+    width: 20%;
+    height: 5%;
+    background: white; 
+    border-radius: 12px;
+    padding: 20px 35px 20px 25px; 
+    border-left: 4px solid var(--details-color);
+    margin: 10px;
+    display: flex;
+      overflow: hidden;
+    -webkit-box-shadow: 7px 7px 21px 1px rgba(0,0,0,0.47); 
+  box-shadow: 7px 7px 21px 1px rgba(0,0,0,0.47);
+  transition: ease .7s;
+  transform: translateX(130%);
+  z-index: 40;
+  
+  }
+  
+  .notification-show{
+      transform: translate(0);
+  }
+  
+  .notification-text{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    margin-left: calc(15% + 40px);
+    gap: 10px;
+    margin-top: -5px;
+    
+  }
+  .notification-title{
+    font-weight: bolder;
+    font-size: 20px;
+}
+.notification-text{
+    font-weight: lighter;
+}
+  
+  .progress-bar{
+      width: 100%;
+      height: 5%;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background-color: var(--details-color);
+      
+  }
+  .progress-bar-animation{
+      animation: progress 4s linear forwards ;
+  }
+  
+  @keyframes progress {
+      100%{
+          right: 100%;
+      }
+  }
+  .notification-icon{
+    position: absolute;
+    left: 1;
+    font-size: 35px;
+   margin-top: 5px;
+   color: black;
+}
+
+
+
+
+/*SEction about us*/
+
+.section2{
+    background-color: var(--color-main);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.section2-titulo{
+    position: absolute;
+    top:5%;
+    left: 28%;
+    font-size: 60px;
+    color: var(--font-color);
+    font-family: 'Ubuntu', sans-serif;
+}
+.section2-titulo-2{
+    position: absolute;
+    top: 15%;
+    left: 40%;
+    
+    font-size: 60px;
+    background: var(--gradient);
+
+    background-color: #0cdf52;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.vision-title{
+    position: absolute;
+    top: 35%;
+    left: 65%;
+    font-size: 50px;
+    color: var(--details-color);
+    font-family: Poppins-light;
+}
+.vision{
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    font-size: 20px;
+    width: 30%;
+    color: var(--color-secondary);
+    font-family: Poppins-light;
+}
+
+.mision{
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    font-size: 20px;
+    width: 30%;
+    color: var(--color-secondary);
+    font-family: Poppins-light;
+}
+.mision-title
+{
+    position: absolute;
+    top: 35%;
+    left: 25%;
+    font-size: 50px;
+    color: var(--details-color);
+    font-family: Poppins-light;
+}
+.conocenos-button{
+    position: absolute;
+    top: 80%;
+    left: 43%;
+    width: 10%;
+    height: 5%;
+    border-radius: 44px;
+    background-color: var(--details-color);
+    color: white;
+    padding: 10px;
+    padding-top: 20px;
+    font-size: 25px;
+    padding-left: 40px;
+    font-family: Poppins;
+    transition: ease .2s;
+}
+.conocenos-button:hover{
+    border: solid 4px var(--details-color);
+    color: var(--details-color);
+    background-color: transparent;
+}
+
+
+/*opinion section*/
+.opinions-section{
+    position: absolute;
+    top: 200%;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+    overflow-x: hidden;
+}
+.opinion-slider{
+    width: 80vw;
+    height: 70vh;
+    background-color: transparent;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    overflow-x: hidden;
+
+}
+
+.opinion1{
+    background-color: #bebebe;
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    width: 20%;
+    height: 80%;
+    transition: ease 2s;
+    border-radius: 44px;
+}
+.opinion2{
+    background-color: #04d47e;
+    position: absolute;
+    top: 10%;
+    left: 65%;
+    width: 20%;
+    height: 80%;
+    transition: ease 2s;
+    border-radius: 44px;
+}
+.opinion3{
+    background-color: #41e7d9;
+    position: absolute;
+    top: 10%;
+    left: 90%;
+    width: 20%;
+    height: 80%;
+    transition: ease 2s;
+    border-radius: 44px;
+}
+.button-slider-right{
+    position: absolute;
+    top: 50%;
+    font-size: 60px;
+    left: 12%;
+    z-index: 10;
+    color: var(--font-color);
+
+}
+.button-slider-left{
+    position: absolute;
+    top: 50%;
+    font-size: 60px;
+    left: 85%;
+    z-index: 10;
+    color: var(--font-color);
+}
+
+.foto{
+    position: relative;
+    top: 25%;
+    left: 25%;
+    width: 60%;
+    height: 25%;
+    border-radius: 100%;
+    background-image: url(../images/capy.png);
+    background-size: 120%;
+    background-repeat: no-repeat;
+
+}
+
+.opinion-message{
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    font-size: 20px;
+    color: var(--secondary-black);
+    font-family: poppins-light;
+
+}
+
+
+
+
+/*Contact section*/
+
+
+.contact-section{
+    position: absolute;
+    top: 240%;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.contact-logo{
+    font-size: 50px;
+    font-family: Poppins;
+    text-align: right;
+    z-index: 10;
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    line-height: 85%;
+    color: white;
+}
+.contact-logo-img{
+    background-image: url(../images/logo-white.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100px;
+    height: 110px;
+    position: absolute;
+    top: -15%;
+    left: 100%;
+}
+
+.redes{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    width: 10%;
+    height: 5%;
+    z-index: 11;
+    background-color: transparent;
+    font-family: Poppins;
+    color: white;
+    font-size: 30px;
+}
+
+.redes-logos{
+position: absolute;
+top: 80%;
+left: 48.5%;
+width: 20%;
+height: 10%;
+z-index: 11;
+background-color: transparent;
+color: var(--color-main);
+font-size: 40px;
+padding: 20px;
+grid: 40px;
+display: inline-block;
+
+}
+.fa-instagram{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 40px;
+    color: white;
+    background-color: transparent;
+    margin: 5px;
+}
+.fa-instagram:hover{
+    font-size: 50px;
+}
+
+.fa-envelope{ 
+    position: absolute;
+    top: 80%;
+    left: 55%;
+    font-size: 40px;
+    color: white;
+    background-color: transparent;
+    margin: 5px;
+}
+.fa-envelope:hover{
+    font-size: 50px;
+}
+.fa-twitter{
+    position: absolute;
+    top: 80%;
+    left: 60%;
+    font-size: 40px;
+    color: white;
+    background-color: transparent;
+    margin: 5px;
+}
+.fa-twitter:hover{
+    font-size: 50px;
+}
+.fa-youtube{
+    position: absolute;
+    top: 80%;
+    left: 65%;
+    font-size: 40px;
+    color: white;
+    background-color: transparent;
+    margin: 5px;
+}
+.fa-youtube:hover{
+    font-size: 50px;
+}
+
+
+
+
+/* TEAM PAGE */
+.bac-button{
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    height: 50px;
+    width: 130px;
+    font-family: Poppins-light;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: lighter;
+    background-color: #ececec;
+    transition: ease .2s;
+}
+
+.back-button > i{
+    font-size: 30px;
+    padding-top: 10px;
+    padding-left: 15px;
+}
+
+
+
+.back{
+position: absolute;
+top: 1px;
+left: 3%;
+z-index: 10;
+font-family: Poppins-light;
+font-size: 20px;
+letter-spacing: 2px;
+transition: ease .2s;
+}
+
+
+
+/*Cards of the team*/
+
+.card1{
+    position: absolute;
+    top: 10%;
+    left: 3%;
+    height: 80%;
+    width: 30%;
+    border-radius: 44px;
+    background-color: var(--details-color);
+}
+.card2{
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    height: 80%;
+    width: 30%;
+    border-radius: 44px;
+    background-color:var(--details-color);
+}
+.card3{
+    position: absolute;
+    top: 10%;
+    left: 67%;
+    height: 80%;
+    width: 30%;
+    border-radius: 44px;
+    background-color: var(--details-color);
+}
+
+
+.photo1{
+position: absolute;
+top: 10%;
+left: 25%;
+background-image: url(../images/Majo.jpeg);
+background-size: cover;
+background-repeat: no-repeat;
+border-radius: 100%;
+height: 300px;
+width: 300px;
+}
+.photo2{
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    background-image: url(../images/Arbo.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0;
+    border-radius: 100%;
+    height: 300px;
+    width: 300px;
+}
+.photo3{
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    background-image: url(../images/8.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+    height: 300px;
+    width: 300px;
+}
+
+.paragraph1{
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    color: white;
+    font-family: Poppins-light;
+    width: 90%;
+
+
+}
+.paragraph2{  position: absolute;
+    top: 60%;
+    left: 5%;
+    color: white;
+    font-family: Poppins-light;
+    width: 90%;}
+.paragraph3{
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    color: white;
+    font-family: Poppins-light;
+    width: 90%;
+}
+
+
+/*Chat page*/
+
+.message-chat{
+    position: absolute;
+    top: 90%;
+    left: 5%;
+    width: 70%;
+    height: 5%;
+    border-radius: 44px;
+    outline: none;
+    border: 2px solid grey;
+    padding-left: 5%;
+    font-family: Poppins-light;
+}
+.message-chat::placeholder{
+    font-size: 15px;
+    font-family: Poppins-light;
+}
+
+.message-chat:hover{
+    border: 2px solid var(--details-color);
+}
+.message-chat:hover::placeholder{
+    color: var(--details-color);
+}
+.message-chat:focus{
+    border: 2px solid var(--details-color);
+}
+.message-chat:focus::placeholder{
+    color: var(--details-color);
+}
+
+
+.send-button{
+    position: absolute;
+    top: 90%;
+    left: 85%;
+    width: 150px;
+    height: 40px;
+    background-color: var(--details-color);
+    border-radius: 22px;
+    color: white;
+    padding-left: 50px;
+    padding-top: 10px;
+    font-size: 20px;
+    font-family: Poppins-light;
+    transition: ease-in-out .4s; 
+}
+
+.send-button>span{
+    padding-left: 20px;
+}
+
+
+.send-button-hover{
+    position: absolute;
+    top: 90%;
+    left: 80%;
+    width: 150px;
+    height: 40px;
+   
+    border-radius: 22px;
+
+    padding-left: 50px;
+    padding-top: 10px;
+    font-size: 20px;
+    font-family: Poppins-light;
+    transition: ease-in-out .4s; 
+    border: 2px solid var(--details-color);
+    background-color: transparent;
+    color: var(--details-color);
+
+    
+}
+
+.messages{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 80%;
+    background-color: rgb(226, 223, 223);
+    border-radius: 44px;
+}
+
+
+.chat-message{
+    border-radius: 44px;
+    background-color: var(--details-color);
+    width: 100px;
+    height: 40px;
+    font-size: 10px;
+    font-family: Poppins-light;
+}
+.chat-message>span{
+    font-family: Poppins;
+}
+
+
+/*Profile page*/
+
+.body-div1{
+    position: absolute;
+    top: 5%;
+    left: 25%;
+    width: 50%;
+    height: 25%;
+    background-color: var(--color-main);
+    
+}
+.body-div2{
+    position: absolute;
+    top: 32%;
+    left: 25%;
+    width: 20%;
+    height: 65%;
+    
+    background-color:  var(--color-main);
+}
+.body-div3{
+    position: absolute;
+    top: 32%;
+    left: 46%;
+    height: 65%;
+    width: 29%;
+    background-color:  var(--color-main);
+   
+}
+.photo-input{
+    position: relative;
+    top: -71%;
+    left: 5%;
+    width: 20%;
+    height: 80%;
+    border-radius: 100%;
+   opacity: 0;
+   z-index: 10;
+   background-color: #da3333;
+}
+.photo-input-div{
+    position: relative;
+    top: 10%;
+    left: 5%;
+    width: 20%;
+    height: 80%;
+    border-radius: 100%;
+   opacity: 1;
+   background-color: transparent;
+} 
+.profile-icon{
+    font-size: 130px;
+    position: relative;
+    top: 15%;
+    left: 20%;
+    transition: ease .2s;
+    color: var(--font-color);
+}
+.pencil-icon{
+    font-size: 130px;
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    transition: ease .2s; 
+    opacity: 0;
+    color: var(--font-color);
+}
+.profile-name{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    font-size: 40px;
+    font-family: Poppins-light;
+}
+.account-button{
+    position: relative;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 10%;
+   border: 2px solid var(--grey);
+   transition: ease-in .5s;
+}
+.account-button::after{
+    content: "  ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 2%;
+    background-color: transparent;
+}
+
+.account-button:hover::after{
+background-color: var(--details-color);
+}
+.account-button:hover > i{
+    left: 25%;
+}
+.account-button:hover > p {
+    left: 40%;
+}
+.fa-circle-user{
+   font-size: 20px;
+   position: absolute   ;
+   top: 25%;
+   left: 20%;
+   font-size: 30px;
+   transition: ease-in .2s;
+}
+.account-button-text{
+    font-size: 15px;
+    font-family: Poppins;
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    transition: ease-in .2s;
+}
+
+
+
+.javascript-button{
+    position: relative;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 10%;
+   border: 2px solid var(--grey);
+}
+.fa-js{
+   font-size: 20px;
+   position: absolute   ;
+   top: 25%;
+   left: 20%;
+   font-size: 30px;
+}
+.javascript-button-text{
+    font-size: 15px;
+    font-family: Poppins;
+    position: absolute;
+    top: 10%;
+    left: 35%;
+}
+.javascript-button::after{
+    content: "  ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 2%;
+    background-color: transparent;
+}
+
+.javascript-button:hover::after{
+background-color: var(--details-color);
+}
+.javascript-button:hover > i{
+    left: 25%;
+}
+.javascript-button:hover > p {
+    left: 40%;
+}
+
+
+.info-submit{
+    position: relative;
+    top: 2%;
+    left: 70%;
+    width: 9%;
+    height:9%;
+    border-radius: 100%;
+    background-color: var(--details-color);
+    padding-left: 3%;
+    padding-top: 3%;
+    font-family: Poppins;
+    color: white;
+    font-size: 30px;
+    transition: .2s linear;
+
+}
+.info-submit:hover{
+    background-color: transparent;
+    color: var(--details-color);
+    border: 3px solid var(--details-color);
+}
+
+
+.mail-input{
+    position: relative;
+    left: 5%;
+    top: 10%;
+    width: 50%;
+    height: 5%;
+    border: none;
+    border-bottom: 2px solid var(--details-color);
+    border-left: transparent;
+    border-right: transparent;
+
+   
+
+}
+
+
+.javascript-course{
+    position: absolute;
+    top: 90%;
+    left: 35%;
+    font-family: Poppins-light;
+    background-color: var(--details-color);
+    font-size: 20px;
+    width: 20%;
+    padding: 10px;
+    padding-left: 20px;
+    color: white;
+    transition: ease-in .2s;
+    text-decoration: none;
+}
+.javascript-course:hover{
+border: var(--details-color) 2px solid;
+color: var(--details-color);
+background-color: transparent;
+}
+.javascript-title{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    background-color: var(--grey);
+    text-decoration: none;
+    color: black;
+}
+
+.javascript-title > p{
+    position: relative;
+    top: 5%;
+    left: 40%;
+    font-size: 30px;
+    font-family: Poppins;
+    color: black;
+
+}
+
+.javascript-title > i {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    font-size: 100px;
+    color: var(--details-color);
+   
+}
+
+.Introduction-box{
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    width: 80%;
+    height: 5%;
+    border-radius: 100px;
+    background-color: white;
+
+}
+
+.Introduction-box > p{
+    position: relative;
+    top: -20%;
+    left: 40%;
+    font-size: 20px;
+    font-family: Poppins;
+}
+
+.lesson-one-box{
+    position: absolute;
+    top: 22%;
+    left: 10%;
+    width: 80%;
+    height: 5%;
+    border-radius: 100px;
+    background-color: white;
+
+}
+
+.lesson-one-box > p{
+    position: relative;
+    top: -20%;
+    left: 45%;
+    font-size: 20px;
+    font-family: Poppins;
+}
+
+.back-button{
+    position: fixed;
+    top: 91%;
+    left: 4%;
+    font-family: Poppins-light;
+    background-color: var(--details-color);
+    font-size: 20px;
+    width: 6%;
+    padding: 6px;
+    padding-left: 20px;
+    padding-top: 6px;
+    color: white;
+    transition: ease-in .3s;
+    text-decoration: none;
+    height: 4%;
+    border-radius: 10px;
+}
+.back-button:hover{
+border: var(--details-color) 3px solid;
+color: var(--details-color);
+background-color: transparent;
+
+}
+.exam-button{
+    position: fixed;
+    top: 91%;
+    left: 87%;
+    font-family: Poppins-light;
+    background-color: var(--details-color);
+    font-size: 20px;
+    width: 5%;
+    padding: 6px;
+    padding-left: 20px;
+    padding-top: 6px;
+    color: white;
+    transition: ease-in .3s;
+    text-decoration: none;
+    height: 4%;
+    border-radius: 10px;
+}
+.exam-button:hover{
+border: var(--details-color) 3px solid;
+color: var(--details-color);
+background-color: transparent;
+}
+.teory{
+    position: absolute;
+    top: 10%;
+    left: 12.5%;
+    width: 75%;
+    height: 20%;
+    border-radius: 20px;
+    padding:10px;
+    padding-left: 20px;
+    font-family: poppins-light;
+    background-color: var(--color-main);
+}
+.usos{
+    position: absolute;
+    top: 40%;
+    left: 12.5%;
+    width: 75%;
+  
+    height: 20%;
+    border-radius: 20px;
+    padding:10px;
+    padding-left: 20px;
+    font-family: poppins-light;
+    background-color: var(--color-main);
+}
+
+.test-div{
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    width: 40%;
+    border-radius: 20px;
+    height: 80%;
+    background-color: transparent;
+}
+
+.test-div > p{
+    position: relative;
+    top: 0%;
+    left: 40%;
+    font-family: poppins;
+    font-size: 30px;
+}
+
+.java-pregunta-1{
+    position: relative;
+    top: 5%;
+    left: 0;
+    font-size: 20px;
+    font-family: poppins-light;
+}
+.respuesta-div{
+    position: relative;
+    top: 10%;
+    left: 0;
+    width: 40%;
+    background-color: var(--color-main);
+    border-radius: 20px;
+    padding-left: 20px;
+    padding: 10px;
+    font-size: 15px;
+    font-family: poppins-light;
+}
+.respuesta-div2{
+    position: relative;
+    top: 10%;
+    left: 0;
+    width: 40%;
+    background-color: var(--color-main);
+    border-radius: 20px;
+    padding-left: 20px;
+    padding: 10px;
+    font-size: 15px;
+    font-family: poppins-light;
+}
+.java-pregunta-2{
+    position: relative;
+    top: -21%;
+    left: 60%;
+    font-size: 20px;
+    font-family: poppins-light;
+}
+.question1{
+    background-color: red;
+}
+.sintasis{
+    position: absolute;
+    top: 53%;
+    left: 10%;
+    background-color: white;
+    width: 30%;
+    height: 30%;
+}
+.img-lesson-one{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    width: 40%;
+    height: 50%;
+    border-radius: 22px;
+    display: none;
+    transition: linear all .3s;
+}
+.pregunta2{
+    position: absolute;
+    top: 47%;
+    left: 15%;
+    width: 30vw;
+    height: 100vh;
+    
+}
+.intro{
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    background-color: white;
+    width: 30%;
+    height: 27%;
+}
+.intro2{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    background-color: white;
+    width: 30%;
+    height: 33%; 
+}
+
+.holamundo{
+    position: absolute;
+    top: 90%;
+right: 3%;
+    width: 30%;
+    height: 30%;
+    border-radius: 20px;
+    padding:10px;
+    padding-left: 20px;
+    font-family: poppins-light;
+    background-color: var(--color-main);
+}
+
+.holamundo2{
+    
+        position: absolute;
+        top: 140%;
+        right: 5%;
+        width: 30%;
+        height: 30%;
+        border-radius: 20px;
+        padding:10px;
+        padding-left: 20px;
+        font-family: poppins-light;
+        background-color: var(--color-main);
+    }
+
+    .code-holamundo{
+        position: absolute;
+        top: 120%;
+        left: 10%;
+        background-color: var(--color-main);
+        width: 23%;
+        height: 20%;
+        border-radius: 22px;
+        padding: 10px;
+        font-family: 'Fira Code', monospace;
+        font-size: 20px;
+        color: black;
+        padding-left: 100px;
+        padding-top: 100px;
+    }
+
+.code-button-javascript-lesson{
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    background-color: var(--color-main);
+    font-size: 15px;
+    font-family: 'Fira Code', monospace;
+    padding: 15px;
+    border-radius: 22px;
+    
+}
+
+.sintaxis-text{
+    position: relative;
+    left: 33%;
+    top: 5%;
+    font-family: Poppins;font-size: 30px;position: relative;top: 14%;
+   display: none;
+
+  
+}
+
+.hover-example:hover{
+    background-color: #04d47e;
+    color: transparent;
+    cursor: pointer;
+}
+.hover-example:hover > .sintaxis-text{
+   
+    color: white;
+   
+    display: block;
+}
+.javascript-introduction-title1{
+    font-family: Poppins;font-size: 30px;position: relative;top: 5%;
+}
+.simple-text-introduction{
+    position: absolute;top: 10%;left: 55%;font-family: poppins;font-size: 30px;
+}
+.example-introduction-button{
+    background-color: var(--details-color);width:10%;height:10%;position:absolute;top: 26%;left: 64%;
+}
+.usos-title{
+    font-family: Poppins;font-size: 30px;position: relative;top: 8%;
+}
+
+.inicio-intrpduction{
+    position: absolute;
+    top: 10%;
+    left: 5%;
+}
+.inicio-text{
+    font-family: Poppins;font-size: 30px;position: relative;top: 4%;
+}
+.inicio-txt{
+    position: relative;top: -5%;
+}
+.usos-sintaxis{
+    position: absolute;
+   top: 50%;left: 5%;
+}
+
+.sintaxis-title{
+    font-family: Poppins;font-size: 30px;position: relative;top: 14%;
+}
+.sintaxis-teory{
+    position: relative;top: 7%;
+}
+.holamundo-text{
+    position: relative;top: 4%;left: 1%;
+}
+
+.mascota{
+    position: absolute;
+    left: 60%;
+    top: 40%;
+    height: 27%;
+    width: 10%;
+    background-image: url(../images/mascota.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+.gobo-texto{
+    position: absolute;
+    left: 65%;
+    top: 20%;
+    height: 27%;
+    width: 19.7%;
+    background-image: url(../images/globo-texto.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.mascota-text{
+    position: absolute;
+    top: 25%;
+    left: 67%;
+    font-size: 20px;
+    font-family: poppins-light;
+    z-index: -1;
+}
+
+.flecha1{
+    position: absolute;
+    top: 60%;
+    left: 45%;
+    height: 30%;
+    width: 10%;
+    background-image: url(../images/flecha1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.explicacion-flecha1{
+    position: absolute;
+    top: 78%;
+    left: 55%;
+    font-size: 15px;
+    font-family: poppins-light;
+
+}
+
+.flecha2{
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    background-size: cover;
+    background-image: url(../images/flecha2.png);
+    background-repeat: no-repeat;
+    height: 35%;
+    transform: rotate(20deg);
+}
+
+.flecha-text{
+    position: absolute;
+    top: 75%;
+    left: 55%;
+    font-size: 40px;
+    font-family: poppins;
+}
+
+.details-section{
+    position: absolute;
+    top: 200%;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--details-color);
+    overflow-x: hidden;
+}
+
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 12vh;
+    z-index: 19;
+  
+}
+.menu-scroll{
+background-color: var(--menu);
+color: var(--menu-font-color);
+}
+.menu-list {
+    background-color: transparent;
+    position: relative;
+    left: 55%;
+    top:-25%;
+    width: 60%;
+}
+.menu-list > ul{
+    list-style: none;
+    font-size: 22px;
+    font-family: Poppins-light;
+    display: inline-flex;
+}
+.menu-list > ul > li{
+    margin: 32px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+
+.menu-list > ul > :nth-child(1):hover::after {
+content: '  ';
+background-color: var(--color-degradado);
+position: absolute;
+top: 30%;
+left: 5.5%;
+width: 8.5%;
+height: 40%;
+border-radius: 18px;
+opacity: 1;
+z-index: 1;
+}
+.menu-list > ul > :nth-child(2):hover::after {
+    content: '  ';
+    background-color: var(--color-degradado);
+    position: absolute;
+    top: 30%;
+    left: 18%;
+    width: 19%;
+    height: 40%;
+    border-radius: 22px;
+    opacity: 1;
+    z-index: 1;
+    }
+
+    .menu-list > ul > :nth-child(3):hover::after {
+        content: '  ';
+        background-color: var(--color-degradado);
+        position: absolute;
+        top: 30%;
+        left: 41%;
+        width: 16.5%;
+        height: 40%;
+        border-radius: 22px;
+        opacity: 1;
+        z-index: 1;
+        }
+.caracteristicas{
+    background: rgba( 255, 255, 255, 1 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4.5px );
+-webkit-backdrop-filter: blur( 4.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+width: 30%;
+height: 50%;
+position: relative;
+top: 25%;
+left: 35%;
+}  
+.logo-caracteristicas{
+    position: relative;
+    top: 15%;
+    left: 5%;
+    width: 80%;
+    height: 80%;
+    background-image: url('../images/logo2.png') ;
+    background-size: 120%;
+    background-repeat: no-repeat;
+}
+
+.caracteristicas1{
+    position: absolute;
+    top: 60%;
+    left: 25%;
+    width: 200px;
+    height: 200px;
+    border-radius: 22px;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    rotate: 20deg;
+}
+.caracteristicas2{
+    position: absolute;
+    top: 10%;
+    left: 65%;
+    width: 200px;
+    height: 200px;
+    border-radius: 22px;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    rotate: -20deg;
+}
+.caracteristicas3{
+    position: absolute;
+    top: 60%;
+    left: 75%;
+    width: 200px;
+    height: 200px;
+    border-radius: 22px;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    rotate: 20deg;
+}
+.caracteristicas4{
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    width: 200px;
+    height: 200px;
+    border-radius: 22px;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    rotate: -20deg;
+}
+
+.code{
+    color: white;
+    position: relative;
+    top: 20%;
+    left: 20%;
+    font-size: 100px;
+}
+.dollar{
+    color: white;
+    position: relative;
+    top: 10%;
+    left: 12%;
+    font-size: 150px;
+ 
+}
+.ray{
+    position: relative;
+    color: white;
+    position: relative;
+    top: 15%;
+    left: 20%;
+    font-size: 150px;
+
+}
+.earth{
+    position: relative;
+    color: white;
+    position: relative;
+    top: 10%;
+    left: 15%;
+    font-size: 150px;
+
+}
+.wave{
+    background-color: transparent;position: absolute;left: 5%;width: 100%;height: 100%; overflow: hidden;
+}
+.wave > svg {
+height: 100%; width: 100%;
+}
+footer{
+    position: absolute;left: 79%;top: 338.2%;z-index: 11;font-family: poppins-light;font-size: 12px;
+}

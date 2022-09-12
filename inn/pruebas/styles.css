@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background: transparent;
+    border-radius: 20px;
+}
+::-webkit-scrollbar-thumb{
+background: #5fd642;
+border-radius: 50px;
+}
+
+
+.notification{
+  position: fixed;
+  top: 50%;
+  right: 5%;
+  width: 20%;
+  height: 5%;
+  background: white; 
+  border-radius: 12px;
+  padding: 20px 35px 20px 25px; 
+  border-left: 4px solid #5fd642;
+  margin: 10px;
+  display: flex;
+    overflow: hidden;
+  -webkit-box-shadow: 7px 7px 21px 1px rgba(0,0,0,0.47); 
+box-shadow: 7px 7px 21px 1px rgba(0,0,0,0.47);
+transition: ease .7s;
+transform: translateX(130%);
+
+}
+
+.notification-show{
+    transform: translate(0);
+}
+
+.notification-text{
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+  margin-left: calc(15% + 40px);
+  gap: 10px;
+  margin-top: -5px;
+  
+}
+
+.notification-title{
+    font-weight: bolder;
+    font-size: 20px;
+}
+.notification-text{
+    font-weight: lighter;
+}
+
+
+.progress-bar{
+    width: 100%;
+    height: 5%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #5fd642;
+    
+}
+.progress-bar-animation{
+    animation: progress 4s linear forwards ;
+}
+
+@keyframes progress {
+    100%{
+        right: 100%;
+    }
+}
+
+.notification-icon{
+    position: absolute;
+    left: 1;
+    font-size: 35px;
+   margin-top: 5px;
+   color: #5fd642;
+}
+
+
+
+.poop{
+    position: absolute;
+    top: 200%;
+}

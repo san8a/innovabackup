@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/21d3201c71.js" crossorigin="anonymous"></script>
+
+  </head>
+  <body onload="show()">
+    <div class="notification" id="notification">
+
+
+<i class="fa-solid fa-circle-check notification-icon"></i>
+      <div class="notification-text">
+        
+        <span class="notification-title">Failed!</span>
+        <span class="notification-message">The last process hav a error</span>
+      </div>
+
+      <div class="progress-bar" id="progress-bar"></div>
+    </div>
+
+    <div onclick="show()">hola</div>
+    <div class="poop">oe</div>
+    <script >
+        function show(){
+            x=document.getElementById('notification')
+            x.classList.toggle("notification-show");
+
+            x=document.getElementById('progress-bar')
+            x.classList.toggle("progress-bar-animation");
+            x.style.background="#5fd642"
+
+
+
+            setTimeout(function(){
+                x=document.getElementById('notification')
+            x.classList.toggle("notification-show");
+
+            x=document.getElementById('progress-bar')
+            x.style.background="transparent";
+            x.classList.toggle("progress-bar-animation");
+
+            }, 4000)
+        }
+    </script>
+  </body>
+</html>

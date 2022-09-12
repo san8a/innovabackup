@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Scripts-->
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="path/to/chartjs/dist/chart.js"></script>
+    
+
+    <!--Font awesome-->
+
+    <script src="https://kit.fontawesome.com/21d3201c71.js" crossorigin="anonymous"></script>
+
+    <!--Icono de la ventana-->
+
+    <link rel="shortcut icon" href="images/logo.ico">
+
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+    <!--Styles-->
+    <link rel="stylesheet" href="Styles/styles-main.css">
+    <link rel="stylesheet" href="Styles/styles-main-phones.css">
+
+
+
+    <title>Innova tech</title>
+    
+</head>
+<body onload="cargarTheme()" style="background-color: var(--grey);">
+
+
+    <div class="test-div">
+        <p>Ejercicio</p>
+   
+        <div class="java-pregunta-1">Que es javascript?</div>
+        <div class="respuesta-div" onclick="mala()" style="top: 10%;">Un terrateniente</div>
+        <div class="respuesta-div" onclick="mala()"  style="top: 12%;">Un planeta</div>
+        <div class="respuesta-div" onclick="mala()"  style="top: 14%;">Un continente</div>
+        <div class="respuesta-div" onclick="buena()" id="buena" style="top: 16%;">Un lenguaje de programacion</div>
+   
+
+        <div class="java-pregunta-2">Para que se usa javascript?</div>
+        <div class="pregunta2" >
+        <div class="respuesta-div2" onclick="mala2()" style="top: -16%;left: 60%;">Jugar videojuegos</div>
+        <div class="respuesta-div2" onclick="buena2()" id="buena2"  style="top: -14%;left: 60%;">Desarrollo web</div>
+        <div class="respuesta-div2" onclick="mala2()"  style="top: -12%;left: 60%;">Pintar</div>
+        <div class="respuesta-div2" onclick="mala2()" style="top: -10%;left: 60%;">Volar</div>
+    </div>
+    </div>
+
+   <a href="lessonone.html"> <div class="back-button">Go back</div></a>
+   <a href="profie.html"> <div onclick="progressFunction()" class="exam-button">Go out</div></a>
+    <script src="Scripts/javascript-main.js"></script>
+   
+</body>
+</html>

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Links-->
+
+    <!--Font awesome-->
+
+    <script src="https://kit.fontawesome.com/21d3201c71.js" crossorigin="anonymous"></script>
+
+    <!--Icono de la ventana-->
+
+    <link rel="shortcut icon" href="images/logo.ico">
+
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+    <!--Styles-->
+    <link rel="stylesheet" href="Styles/styles-main.css">
+    <link rel="stylesheet" href="Styles/styles-main-phones.css">
+
+
+    <title>Innova tech</title>
+    
+</head>
+<body id="body" onload="letra(),cargarTheme()">
+
+    <!--Section 1-->
+
+    <section id="home" class="section1">  
+        
+    <!-- Menu Principal -->
+        
+    <div class="menu">
+
+        <div class="logo-main"></div>
+
+
+        <nav class="menu-list">
+            <ul>
+                <li>Inicio</li>
+                <li>Caracteristicas</li>
+                <li>Contactenos</li>
+            </ul>
+        </nav>
+
+    </div>
+
+
+    <!--  <div class="menu-box">
+
+    <a href="#home">
+    <div class="home">Home</div>
+    </a>   
+
+    <a href="#about-us">
+    <div class="about-us">About us</div>
+    </a>
+
+    <a href="#contact-section">
+    <div class="contact">Contact</div>
+    </a>
+
+    <a href="#">
+    <div class="opinions">Opinions</div>
+    </a> -->
+
+    <!--Logo menu principal-->
+
+   
+    <!-- </div> -->
+   
+    <!--responsive button menu-->
+
+    <div class="menu-theme-primary"  onclick="menuResponsive()"><i class="fa-solid fa-bars menu"></i></div>
+
+    <!-- menu responsive
+
+    <div class="menu-responsive hidden">
+        <nav>
+            <li>Home</li>
+            <li>Contact</li>
+            <li>About Us</li>
+            <li>Opinions</li>
+        </nav>
+    </div> -->
+
+    <!-- Theme mode button -->
+
+    <div class="button-theme-primary" id="button-theme"></div>
+
+    
+
+    <!--Ilustration main-->
+
+   
+
+   <div class="illustration-main"></div>
+    <!-- Wave -->
+   
+<div class="wave" ><svg viewBox="0 0 500 150" preserveAspectRatio="none"><path d="M483.07,26.16 C360.60,142.61 246.61,75.50 207.67,414.97 L500.00,150.00 L500.00,0.00 Z" style="stroke: none; fill: var(--details-color);"></path></svg></div>
+    
+
+    <!--Titulo y descripcion inicial-->
+
+    <p class="titulo-main">LA INNOVACIÒN,<br>DESDE LO DIFERENTE,<br> ORIGINAL Y CREATIVO<br></p>
+
+    <p class="texto-main">¡JUSTO A TU MEDIDA!</p>
+
+    <!-- <p class="description-main">Comienza hoy en Innova Tech y vas a aprender programacion de una manera facil y gratis.</p> -->
+
+    <!-- Start button  -->
+
+   <a href="guide.html"> <div class="start-button"  onmouseenter="hoverstartbutton()" onmouseleave="hoverstartbutton2()">Comienza ya</div>
+    <div class="arrow-button" onmouseenter="hoverstartbutton()" onmouseleave="hoverstartbutton2()"><i id="icon-start-button" class="fa-solid fa-chevron-right"></i></div></a>
+
+    <!-- <div class="start-button-theme2 hidden" onmouseenter="hoverstartbutton3()" onmouseleave="hoverstartbutton4()">Comienza ya!</div>
+    <div class="arrow-button-theme2 hidden" onmouseenter="hoverstartbutton3()" onmouseleave="hoverstartbutton4()"><i id="icon-start-button-theme2" class="fa-solid fa-chevron-right"></i></div>
+
+    Button Login -->
+
+    <div class="login-button" id="login-button" onclick="login()"><i class="fa-solid fa-user"></i></div>
+    
+
+ 
+    
+</section>
+    <!--Login form-->
+
+
+    <div class="notification" id="notification">
+        <i class="fa-solid fa-circle-check notification-icon" id="icon-notification"></i>
+     <div class="notification-text">
+                  <span class="notification-title" id="title-notification">Success!</span>
+                  <span class="notification-message" id="text-notification">Now you have a account!</span>
+                </div>
+          
+                <div class="progress-bar" id="progress-bar"></div>
+              </div>
+    
+        <div class="login-box hidden">
+    
+            <form>
+    
+                <!--username input-->
+                <i class="fa-solid fa-user icon-user"></i>
+                <input type="text" placeholder="Username"class="input-user">
+          
+                <!--password-->
+                <i class="fa-solid fa-lock password-icon"></i>
+                <input type="password" placeholder="Password" class="input-password" id="password-input">
+                <i class="fa-regular fa-eye eye" id="eye"></i>
+                
+          
+                <!--Sign up paragraph-->
+                <p class="sign-up-p" id="form-p">Don´t have a account? <a href="javascript:void(0)" onclick="register()" id="link-form">Sign Up </a></p>
+    
+                
+    
+                <input id="switcher" id="notification-id" class="input-password" placeholder="hola" style="top:90%;z-index: 3000;display: none;" type="text">
+    
+              
+                
+    
+        </form>
+            <!--X button-->
+    
+            <div class="x" onclick="loginClose()"><i class="fa-solid fa-xmark"></i></div>
+    
+            <!--Illustration-->
+    
+            <div class="login-illustration"></div>
+    
+            <!--Login title-->
+    
+            <div class="login-title">Log  In</div>
+    
+            <div class="sub-box"></div>
+    
+             <!--login form button-->
+             <div class="login-form-button"><i class="fa-solid fa-arrow-right"></i></div>
+    
+    
+            </div>
+    
+
+   
+
+
+
+
+
+
+
+
+<!-- //ABOUT US SECTION//-->
+    <section id="about-us" class="section2">
+        <!--Titulos-->
+        <p class="section2-titulo">La nueva forma de aprender</p>
+        <p class="section2-titulo-2">Comienza hoy</p>
+
+        <!--Vision-->
+        <p class="vision-title">Visión</p>
+        <p class="vision">En innova tech nuestra visión se basa en una organización a nivel nacional la cual prevea y otorgue conocimientos de programación y tecnología desde la mejor calidad en la industria.
+        </p>
+
+        <!--Mision-->
+        <p class="mision-title">Misión</p>
+        <p class="mision">En innova tech nuestra misión se contrasta con el mundo actual y lo que será de el en un futuro. Con nosotros la meta es crear una generación con conocimientos más allá que básicos respectivos a la programación y la tecnología.</p>
+
+
+       <a href="team.html"> <div class="conocenos-button">Conocenos <i class="fa-solid fa-chevron-right"></i></div></a>
+    
+    </section> 
+
+
+
+
+<!-- Opinions Section   
+
+
+<section class="opinions-section">  
+
+    <div class="button-slider-right" ><i class="fa-solid fa-angle-left"></i></div>
+    <div class="button-slider-left"><i class="fa-solid fa-angle-right"></i></div>
+    
+    <div class="opinion-slider">
+        
+        <div class="opinion1">
+            <div class="foto"></div>
+            <div class="opinion-message">"An amazin page, I love it ❤️"</div>
+
+          
+        </div>
+        <div class="opinion2">
+            <div class="foto"></div>
+            <div class="opinion-message">"An amazin page, I love it ❤️"</div>
+
+         
+        </div>
+      
+        <div class="opinion3">
+            <div class="foto"></div>
+            <div class="opinion-message">"An amazin page, I love it ❤️"</div>
+
+           
+        </div>
+        </div>
+        </div>
+    </div>
+
+
+
+
+</section> -->
+
+<!--details section-->
+<section class="details-section">
+
+<div class="caracteristicas"><div class="logo-caracteristicas"></div></div>
+
+<div class="caracteristicas1"><i class="fa-solid fa-code code"></i></i></div>
+<div class="caracteristicas2"><i class="fa-shap fa-solid fa-coins dollar"></i></div>
+<div class="caracteristicas3"><i class="fa-solid fa-bolt-lightning ray"></i></div>
+<div class="caracteristicas4"><i class="fa-solid fa-earth-americas earth"></i></div>
+</section>
+<!--Contact section-->
+
+<section class="contact-section" id="contact-section">
+<!--Ola-->
+
+<div style="height: 70%; overflow: hidden;position: absolute;bottom: 0;width: 100vw;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-16.64,47.88 C-34.14,-55.73 404.34,165.30 505.92,-1.45 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: var(--details-color);"></path></svg>
+
+
+
+
+</div>
+<div class="contact-logo">
+    INNOVA<br>TECH
+
+    <div class="contact-logo-img"></div>
+</div>
+
+
+<div class="redes"> 
+   Redes
+</div>
+
+
+    <a href="https://www.instagram.com/innovatttech/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    <a href="mailto:innovatech302@gmail.com " ><i class="fa-solid fa-envelope"></i></a>
+    
+    <a href="https://twitter.com/?lang=ES" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+    <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer style="">&copy; Copyright 2022 INNOVA TECH. Todos los derechos reservados</footer>
+<script src="Scripts/javascript-main.js"></script>
+    <!--
+        Atribuciones para el uso de imagenes gratis <3
+        Illustration by <a href="https://icons8.com/illustrations/author/259416">Marina Green</a> from <a href="https://icons8.com/illustrations">Ouch!</a>
+        
+        <a href="https://www.flaticon.es/iconos-gratis/menu-abierto" title="menú abierto iconos">Menú abierto iconos creados por Freepik - Flaticon</a>
+        <a href="https://www.flaticon.com/free-icons/moon" title="moon icons">Moon icons created by Good Ware - Flaticon</a>   -->
+</body>
+</html>

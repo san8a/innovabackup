@@ -1,0 +1,2 @@
+~Vyq7Z{qBSM/I6TM
+$conexion=new mysqli("localhost","id19255937_admin","~Vyq7Z{qBSM/I6TM","id19255937_innovausers"); 
