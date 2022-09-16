@@ -16,6 +16,9 @@ var cuadroactual=0;
 
 var r = document.querySelector(':root');
 
+localStorage.setItem('dark-mode','false')
+
+
 function letra(){
     setInterval(()=>{var ventana_ancho = $(window).width();if(ventana_ancho<=800){  $(".home").addClass("hidden")
     $(".about-us").addClass("hidden")
