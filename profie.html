@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Scripts-->
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="path/to/chartjs/dist/chart.js"></script>
+    
+
+    <!--Font awesome-->
+
+    <script src="https://kit.fontawesome.com/21d3201c71.js" crossorigin="anonymous"></script>
+
+    <!--Icono de la ventana-->
+
+    <link rel="shortcut icon" href="images/logo.ico">
+
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+    <!--Styles-->
+    <link rel="stylesheet" href="Styles/styles-main.css">
+    <link rel="stylesheet" href="Styles/styles-main-phones.css">
+
+
+
+    <title>Innova tech</title>
+    
+</head>
+<body onload="cargarTheme(),load(),loadinfo()" style="background-color: var(--grey);">
+
+
+   <div class="body-div1">
+    
+  <div class="photo-input-div"><i class="fa-solid fa-user profile-icon"></i><i class="fa-solid fa-user-pen pencil-icon"></i></div>
+    <input class="photo-input" onmouseenter="profilePicture1()" onmouseleave="profilePicture2()" type="file" placeholder="  ">
+  <div class="profile-name" id="name">NOMBRE GENERICO</div>
+   </div>
+
+
+   <div class="body-div2">
+    <div class="account-button" onclick="accountButton()">
+        <i class="fa-solid fa-circle-user"></i>
+        <p class="account-button-text">ACCOUNT</p> 
+    </div>
+    <div class="javascript-button" onclick="javascriptButton()">
+        <i class="fa-brands fa-js"></i>
+        <p class="javascript-button-text">JAVASCRIPT</p> 
+    </div>
+
+
+
+</div>
+   <div class="body-div3" id="profile-menu">
+    <input  style="display: none;" type='text' class='mail-input' placeholder='E-MAIL'><div  style="display: none;" class='info-submit'><i class='fa-solid fa-paper-plane'></i></div>
+    
+    <div>
+      <canvas id="myChart" width="100" height="100" style="display: none;"></canvas>
+    </div>
+  <a href="javascript.html" style="text-decoration: none;"><div class="javascript-course">Ir al curso</div></a>
+   </div>
+
+
+
+<div class="lateral-menu">
+  <div class="logo-menu-lateral"></div>
+  <div class="logo-text-menu-lateral">Innova Tech</div>
+  <i onclick="redi('editor.html')" class="fa-solid fa-pen-to-square"></i>
+  <div onclick="redi('editor.html')" class="logo-text2-menu-lateral">Editor de texto</div>
+
+</div>
+
+
+    <script src="Scripts/javascript-main.js"></script>
+    <script>
+     
+       
+
+
+
+    </script>
+</body>
+</html>
